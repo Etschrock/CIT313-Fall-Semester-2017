@@ -5,5 +5,5 @@
     </head>
     <body>
         <div id="content">
-            This is the header.
+
 
