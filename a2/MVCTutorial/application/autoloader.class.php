@@ -1,12 +1,5 @@
 <?php
 
-/*
- * Author: Louie Zhu
- * Date: Mar. 26, 2016
- * Name: autoloader.class.php
- * Description: This script registers an auto load method that can automatically loads class file when an object is instantiated.
- */
-
 class Autoloader {
 
     static private $_instance = NULL;
