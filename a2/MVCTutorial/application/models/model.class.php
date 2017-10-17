@@ -2,7 +2,7 @@
 
 abstract class Model {
     //private attributes
-    private $userID, $firstname, $lastname, $email, $role;
+    protected $userID, $firstname, $lastname, $email, $role;
     
     //construct
     public function __construct() {

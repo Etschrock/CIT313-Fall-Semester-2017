@@ -17,7 +17,14 @@ class Controller {
     
     //display home page
     function home() {
-        //grabbing data from model
+        //setting attributes
+        $this->user->userID = "eschrock";
+        $this->user->firstname = "Eric";
+        $this->user->lastname = "Schrock";
+        $this->user->email = "etschrock@umail.iu.edu";
+        $this->user->role = "admin";
+
+        //setting the user to data and calling its getname function
         $data = $this->user->getName();
         
         //sends data to view

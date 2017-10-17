@@ -7,15 +7,16 @@ class User extends Model {
     }
     
     public function getName() {
-        
-        return array(
-            'firstname' => 'Eric',
-            'lastname' => 'Schrock',
-            'userID' => 'eschrock',
-            'email' => 'etschrock@yahoo.com',
-            'role' => 'admin'
-            
+
+        //returning an array
+        return array (
+            'userID' => $this->userID,
+            'firstname' => $this->firstname,
+            'lastname' => $this->lastname,
+            'email' => $this->email,
+            'role' => $this->role
         );
+
     }
 }
 
