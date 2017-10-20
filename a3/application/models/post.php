@@ -48,10 +48,17 @@ class Post extends Model{
 		
 	}
 
-	public function update($data) {
+	public function updatePost($data) {
 
-        $sql = "update posts set title=" . $_POST['title'] . "where pID = " . $_POST['pID'];
-        $this->db->execute($sql,$data);
+        //grabbing the variables from data
+        $title = $data['title'];
+        $content = $data['content'];
+        $categoryID = $data['categoryID'];
+        $date = $data['date'];
+        $pID = $data['pID'];
+
+        $sql = "update posts set title='$title', content='$content', categoryID='$categoryID', date='$date' where pID = '$pID'";
+        $this->db->execute($sql);
         $message = 'Post updated.';
         return $message;
     }
