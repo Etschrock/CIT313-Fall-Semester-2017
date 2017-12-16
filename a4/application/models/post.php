@@ -62,5 +62,17 @@ class Post extends Model{
         $message = 'Post updated.';
         return $message;
     }
+
+    public function deletePost($data) {
+
+        $sql = "DELETE FROM posts WHERE pID = " . $data['pID'];
+        $this->db->execute($sql);
+
+        header ('Location:' . BASE_URL . 'manageposts/index');
+
+        $message = "Post deleted.";
+        return $message;
+
+    }
 	
 }

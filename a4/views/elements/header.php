@@ -80,6 +80,18 @@
                         }
                         ?>
                         <li>
+                          <a href="<?php echo BASE_URL?>manageposts/index">Manage Posts</a>
+                        </li>
+                        <li>
+                          <a href="<?php echo BASE_URL?>categories/index">Manage Categories</a>
+                        </li>
+                        <li>
+                          <a href="#">Manage Users</a>
+                        </li>
+                        <li>
+                          <a href="#">My Profile</a>
+                        </li>
+                        <li>
                           <a href="<?php echo BASE_URL?>login/logout">Log Out</a>
                         </li>
                       </ul>

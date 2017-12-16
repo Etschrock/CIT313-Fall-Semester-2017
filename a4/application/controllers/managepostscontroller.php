@@ -8,6 +8,10 @@ class ManagePostsController extends Controller{
 
     public function index() {
 
+        $this->postObject = new Post();
+        $posts = $this->postObject->getAllPosts();
+
+        $this->set('posts',$posts);
     }
 
 	public function add(){
@@ -57,4 +61,16 @@ class ManagePostsController extends Controller{
         $this->set('message', $result);
 
     }
+
+    public function deletePost() {
+
+        $this->postObject = new Post();
+
+        $data = array('pID'=>$_POST['pID']);
+
+        $this->postObject->deletePost($data);
+
+
+    }
+
 }

@@ -10,7 +10,7 @@
         <p><?php echo "Date Posted: " . $p['date'];?></p>
         <p><?php echo "Written By: " . $p['uID'];?></p>
         <p><?php echo "Category: " . $p['categoryID'];?></p>
-        <div style="margin-top:15px;" ><a href="<?php echo BASE_URL;?>ajax/get_post_content/?pID=<?php echo $p['pID'];?>" class="btn  post-loader">View Content</a></div>
+        <div style="margin-top:15px;" ><a href="<?php echo BASE_URL;?>ajax/get_post_content/?pID=<?php echo $p['pID'];?>" class="btn btn-primary  post-loader">View Content</a></div>
 <?php }?>
 </div>
 
